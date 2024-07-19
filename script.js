@@ -3,11 +3,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     carousels.forEach(carousel => {
         const inner = carousel.querySelector('.carousel-inner');
+        const items = inner.querySelectorAll('.carousel-item');
         let currentIndex = 0;
 
         setInterval(() => {
-            const images = inner.children;
-            currentIndex = (currentIndex + 1) % images.length;
+            currentIndex = (currentIndex + 1) % items.length;
             inner.style.transform = `translateX(-${currentIndex * 100}%)`;
         }, 3000);
     });
