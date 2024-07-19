@@ -72,6 +72,27 @@ h2 {
     margin-top: 0;
 }
 
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.carousel img:hover {
+    transform: scale(1.1);
+}
+
 footer {
     background-color: #4CAF50;
     color: white;
